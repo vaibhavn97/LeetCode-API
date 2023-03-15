@@ -9,7 +9,7 @@ const e = require('express');
 
 
 // Configuring Application
-const PORT = 8000;
+const PORT = process.env || 8000;
 app.use(bodyParser.urlencoded({extended:true}));
 
 
