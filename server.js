@@ -8,6 +8,7 @@ const e = require('express');
 
 
 
+
 // Configuring Application
 const PORT = process.env || 8000;
 app.use(bodyParser.urlencoded({extended:true}));
@@ -19,7 +20,7 @@ const leetCodeSchema = mongoose.Schema({
     stat: Object,
     paid_only : Boolean,
     difficulty : Object,
-})
+});
 
 const leetCodeModel = mongoose.model('questions', leetCodeSchema);
 
